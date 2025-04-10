@@ -31,7 +31,7 @@ export default function ProductPage({
   const whatsappMessage = encodeURIComponent(
     `Me interesa este producto: ${product.name}\nPrecio: $${product.price.toLocaleString()}`
   );
-  const whatsappLink = `https://wa.me/+5493815123456?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/+5493813380751?text=${whatsappMessage}`;
 
   return (
     <div className="min-h-screen pt-24 pb-12">

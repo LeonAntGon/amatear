@@ -9,7 +9,7 @@ export function WhatsAppButton() {
     ? '¡Hola! Me interesa este producto'
     : '¡Hola! Tengo una consulta sobre sus productos';
   
-  const whatsappLink = `https://wa.me/+5493815123456?text=${encodeURIComponent(message)}`;
+  const whatsappLink = `https://wa.me/+5493813380751?text=${encodeURIComponent(message)}`;
 
   return (
     <a
