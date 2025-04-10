@@ -8,6 +8,7 @@ export interface Product {
   variants?: {
     size?: string[];
     style?: string[];
+    color?: string[];
   };
   stock: number;
   featured?: boolean;
@@ -15,6 +16,8 @@ export interface Product {
     material?: string;
     capacity?: string;
     origin?: string;
+    length?: string;
+    duration?: string;
   };
 }
 

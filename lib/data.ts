@@ -1,6 +1,5 @@
 import { Product, ProductCategory } from './types';
 import mateImperial1 from "@/public/mates/imperial-de-algarrobo.jpg"
-import trymate from "@/public/mates/imperial-premium-de-albaca.jpg"
 
 export const products: Product[] = [
   {
@@ -11,7 +10,6 @@ export const products: Product[] = [
     category: 'mate',
     images: [
       mateImperial1.src ,
-      trymate.src,
     ],
     variants: {
       size: ['Standard', 'Grande'],
