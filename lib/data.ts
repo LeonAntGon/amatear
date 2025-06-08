@@ -1,16 +1,18 @@
 import { Product, ProductCategory } from './types';
-import mateImperial1 from "@/public/mates/imperial-de-algarrobo.jpg"
+import mateImperial1 from "@/public/mates/imp-1.jpg"
+import mateImperial2 from "@/public/mates/imp-2.jpg"
+import mateImperialRosa from "@/public/mates/imp-r.jpg"
+import camioneroAcero from "@/public/mates/cam-acero.jpg"
+import camioneroAlgarrobo from "@/public/mates/cam-algarrobo.jpg"
 
 export const products: Product[] = [
   {
     id: 1,
-    name: 'Imperial de algarrobo',
+    name: 'Imperial de algarrobo clásico',
     description: 'Mate imperial de calabaza premium con virola de alpaca y opción de grabado personalizado. Ideal para los verdaderos conocedores del mate.',
     price: 15000,
     category: 'mate',
-    images: [
-      mateImperial1.src ,
-    ],
+    images: [mateImperial1.src],
     variants: {
       size: ['Standard', 'Grande'],
       style: ['Liso', 'Grabado Simple', 'Grabado Premium'],
@@ -25,74 +27,78 @@ export const products: Product[] = [
   },
   {
     id: 2,
-    name: 'Yerba Premium Tucumana',
-    description: 'Yerba mate premium cultivada en las mejores plantaciones de Tucumán. Estacionamiento óptimo para un sabor equilibrado.',
-    price: 3500,
-    category: 'yerba',
-    images: [
-      'https://images.unsplash.com/photo-1619449991858-0fb90d26c40c?auto=format&fit=crop&q=80&w=800',
-    ],
-    stock: 50,
+    name: 'Imperial de algarrobo premium',
+    description: 'Mate imperial de calabaza premium con acabado especial y virola de alpaca. Diseño elegante para los amantes del mate tradicional.',
+    price: 16000,
+    category: 'mate',
+    images: [mateImperial2.src],
+    variants: {
+      size: ['Standard', 'Grande'],
+      style: ['Liso', 'Grabado Simple', 'Grabado Premium'],
+    },
+    stock: 12,
     featured: true,
     specifications: {
+      material: 'Calabaza natural y alpaca',
+      capacity: '180ml',
       origin: 'Tucumán, Argentina',
     },
   },
   {
     id: 3,
-    name: 'Set Matero Completo',
-    description: 'Set completo que incluye mate imperial, bombilla de alpaca, yerba premium y bolso matero artesanal.',
-    price: 25000,
-    category: 'set',
-    images: [
-      'https://images.unsplash.com/photo-1619449991584-ddf6d868c6c8?auto=format&fit=crop&q=80&w=800',
-    ],
+    name: 'Imperial de algarrobo rosa',
+    description: 'Mate imperial de calabaza con un hermoso acabado rosado y virola de alpaca. Una pieza única que combina tradición con estilo.',
+    price: 16500,
+    category: 'mate',
+    images: [mateImperialRosa.src],
     variants: {
-      style: ['Clásico', 'Premium'],
+      size: ['Standard', 'Grande'],
+      style: ['Liso', 'Grabado Simple', 'Grabado Premium'],
     },
     stock: 10,
     featured: true,
     specifications: {
-      material: 'Varios',
+      material: 'Calabaza natural y alpaca',
+      capacity: '180ml',
       origin: 'Tucumán, Argentina',
     },
   },
   {
     id: 4,
-    name: 'Bombilla Alpaca Premium',
-    description: 'Bombilla artesanal de alpaca con diseño tradicional y filtro desmontable. Perfecta para disfrutar tu mate con estilo y durabilidad.',
-    price: 8500,
-    category: 'bombilla',
-    images: [
-      'https://images.unsplash.com/photo-1619449991584-ddf6d868c6c8?auto=format&fit=crop&q=80&w=800',
-    ],
-    stock: 25,
-    featured: true,
+    name: 'Camionero de Acero',
+    description: 'Mate camionero robusto fabricado en acero inoxidable. Ideal para el uso diario y viajes, resistente a golpes y caídas.',
+    price: 12000,
+    category: 'mate',
+    images: [camioneroAcero.src],
+    variants: {
+      size: ['Standard'],
+      style: ['Liso', 'Grabado Simple'],
+    },
+    stock: 20,
+    featured: false,
     specifications: {
-      material: 'Alpaca 100%',
-      length: '20cm',
+      material: 'Acero inoxidable',
+      capacity: '200ml',
       origin: 'Tucumán, Argentina',
     },
   },
   {
     id: 5,
-    name: 'Termo Stanley Original',
-    description: 'Termo de acero inoxidable con tecnología de aislamiento térmico que mantiene la temperatura del agua por hasta 24 horas.',
-    price: 45000,
-    category: 'termo',
-    images: [
-      'https://images.unsplash.com/photo-1619449991377-ed091f74ed76?auto=format&fit=crop&q=80&w=800',
-    ],
+    name: 'Camionero de Algarrobo',
+    description: 'Mate camionero artesanal tallado en madera de algarrobo. Combina la tradición del mate con la durabilidad de la madera noble.',
+    price: 10000,
+    category: 'mate',
+    images: [camioneroAlgarrobo.src],
     variants: {
-      size: ['1L', '1.2L'],
-      color: ['Verde', 'Negro', 'Azul'],
+      size: ['Standard'],
+      style: ['Liso', 'Grabado Simple'],
     },
-    stock: 20,
-    featured: true,
+    stock: 25,
+    featured: false,
     specifications: {
-      material: 'Acero inoxidable',
-      capacity: '1L/1.2L',
-      duration: '24 horas caliente/36 horas frío',
+      material: 'Madera de algarrobo',
+      capacity: '190ml',
+      origin: 'Tucumán, Argentina',
     },
   },
 ];
@@ -102,7 +108,7 @@ export const categories: ProductCategory[] = [
     id: 'mates',
     name: 'Mates Artesanales',
     description: 'Mates únicos con grabados personalizados',
-    image: 'https://images.unsplash.com/photo-1619449991377-ed091f74ed76?auto=format&fit=crop&q=80&w=800',
+    image: mateImperial1.src,
   },
   {
     id: 'yerbas',
